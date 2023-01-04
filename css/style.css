@@ -1,0 +1,56 @@
+/*IMPORTANDO FONTE DO GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+/*RESET*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+nav{
+    background:#333;
+
+}
+nav li {
+    display: inline-block;
+    list-style:none;
+}
+
+nav li a {
+    display: inline-block;
+    color:#fff;
+    text-decoration:none;
+    padding:15px;
+}
+
+nav li a:hover {
+    background:rgb(153, 12, 12);
+    transition:ease-in-out 0.2s;
+}
+
+.dropdown-menu {
+    position:absolute;
+    *border:1px solid rgba(0, 0, 0, 0.568);
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.452);
+    display: none;
+
+}
+
+
+
+.dropdown-menu  a{
+    display: block;
+    color:#333;
+}
+
+.dropdown-menu a:hover {
+    color:#fff;
+    transition: ease-in-out 0.2s;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
